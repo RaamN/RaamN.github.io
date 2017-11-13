@@ -1,4 +1,4 @@
-img {
+.img-circle {
     border-radius: 50%;
 }
 .navbar {
@@ -10,6 +10,11 @@ img {
     background-color: #f2f2f2;
     padding: 25px;
   }
+
+.card-img-top  {
+  width:540px; /* you can use % */
+  height: auto;
+}
 
   a {
     text-decoration: none ;
