@@ -1,6 +1,17 @@
 // This was taken from stack overflow, link here: https://stackoverflow.com/questions/15301356/how-can-i-highlight-a-selected-list-item-with-jquery
+//highlights navbar section
 $(document).ready(function () {
-    $("li").hover(function () {
+    $("nav li").hover(function () {
+        var theColorIs = $(this).css("color");
+        $(this).css("background-color", "#525252");
+    }, function () {
+        $(this).css("background-color", "#222");
+    });
+});
+//highlights skill sections
+$(document).ready(function () {
+    $(".container li").hover(function () {
+        var theColorIs = $(this).css("color");
         $(this).css("background-color", "#525252");
     }, function () {
         $(this).css("background-color", "#FFFFFF");
