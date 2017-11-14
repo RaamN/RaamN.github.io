@@ -3,12 +3,16 @@
     <head>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> -->
+        <link rel="stylesheet" type = "text/css" href = "font-awesome-4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href = "style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+        <script src="script.js"></script>
         <meta name="author" content="Raam Nachiappan">
 
     </head>
     <body>
+      <!-- This navigation bar idea was taken from w3 schools, link here: https://www.w3schools.com/bootstrap/tryit.asp?filename=trybs_temp_portfolio&stacked=h -->
       <nav class="navbar navbar-inverse">
               <div class="container-fluid">
                 <div class="navbar-header">
@@ -17,12 +21,13 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>                        
                   </button>
-                  <a class="navbar-brand" href="#">Logo</a>
+                  <a class="navbar-brand" href="#"></a>
                 </div>
                 <div class="collapse navbar-collapse in" id="myNavbar">
                   <ul class="nav navbar-nav">
                     <li class="active"><a href="#">Home</a></li>
                     <li><a href="#intro">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
                     <li><a href="#projects">Projects</a></li>
                     <li><a href="#contact">Contact</a></li>
                   </ul>
@@ -30,48 +35,89 @@
               </div>
             </nav>
           
+          <!-- Jumbotron idea taken from w3 schools, link here: https://www.w3schools.com/bootstrap/bootstrap_jumbotron_header.asp -->
           <a name = "intro">
-          <div class="jumbotron">
-                <div class="container text-center">
-                  <h1>Raam Nachiappan</h1>    
-                  <img class = "img-circle" src="profilePicture.jpg" style="width:200px">  
-                  <p>Hello! My name is Raam and I am a Computer Science student at the University of California, Irvine,
-                        My expected date of graduation is December 2017. My goal is to build beautiful projects that can help
-                        people with the skills I have developed.</p>
-                </div>
-              </div>
+            <div class="jumbotron">
+                  <div class="container text-center">
+                    <h1>Raam Nachiappan</h1>    
+                    <img class = "img-circle" src="profilePicture.jpg"> 
+                    <p>Hello! My name is Raam and I am a fourth year student at the University of California, Irvine.
+                          My expected date of graduation is December 2017. My goal is to build beautiful projects that can help
+                          people with the skills I have developed. When I am not programming, you can probably find me drawing, snowboarding,
+                          or exploring the world.</p>
+                  </div>
+            </div>
           </a>
+
+        <a name = "skills">       </a> 
         <h2>Skills</h2>
+          <div class = "container" id = "skills">
+            <div class = "row">
+              <div class = "col-md-2">
+                <ul class="list-unstyled">
+                <h3>Languages</h3>
+                <li>Python</li>
+                <li>Java</li>
+                <li>SQL</li>
+                <li>HTML/CSS</li>
+                <li>JavaScript</li>
+              </div>
+              <div class = "col-md-2">
+                <ul class="list-unstyled">
+                <h3>Frameworks</h3>
+                <li>Angular</li>
+                <li>React</li>
+                <li>Ionic</li>
+                <li>Cordova</li>
+              </div>
+              <div class = "col-md-2">
+                <ul class="list-unstyled">
+                <h3>Tools</h3>
+                <li>Git</li>
+                <li>Jira</li>
+                <li>MySql</li>
+                <li>Chrome Dev Tools</li>
+                <li>Jenkins</li>
+              </div>
+              <div class = "col-md-2">
+                <ul class="list-unstyled">
+                <h3>Design</h3>
+                <li>User Testing</li>
+                <li>Prototyping</li>
+                <li>Typography</li>
+              </div>
+            </div>
+        </div>
 
-
+        <!-- This card idea was taken from W3 Schools, link here: https://www.w3schools.com/howto/howto_css_cards.asp -->
         <a name ="projects">
           <h2>Projects</h2>
           <div class ="container">
             <div class ="row">
                 <div class="col-md-4">
-            <div class="card" style="width: 20rem;">
-              <img class="card-img-top" src="search engine.JPG" alt="Card image cap" style = height:300px;width:auto;>
+            <div class="card">
+              <img class="card-img-top" src="search engine.JPG" alt="Card image cap">
               <div class="card-block">
                 <h4 class="card-title">Search Engine</h4>
-                <p class="card-text">A search engine which allows users to search for pages in the ICS domain. Will return the 10 highest related links.</p>
+                <p class="card-text">Developed a search engine which uses a web crawler to index and scrape web domains for document retrieval. Used TF-IDF to rank documents and return the most relevant documents for the search queries.</p>
               </div>
             </div>
           </div>
           <div class="col-md-4"></div>
           <div class="col-md-4">
-            <div class="card" style="width: 20rem;">
+            <div class="card">
               <img class="card-img-top" src="fabflix.JPG" alt="Card image cap">
               <div class="card-block">
                 <h4 class="card-title">Fabflix Web Application</h4>
-                <p class="card-text">A search engine which allows users to search for pages in the ICS domain. Will return the 10 highest related links.</p>
+                <p class="card-text">A complete online movie sales and streaming website implemented as a Java web application with a MySQL backend. Users can create accounts, browse/search movies, and add movies to cart for checkout.</p>
               </div>
             </div>
           </div>
         </div>
         <div class ="row">
             <div class="col-md-4">
-        <div class="card" style="width: 20rem;">
-          <img class="card-img-top" src="search engine.JPG" alt="Card image cap" style = height:300px;width:auto;>
+        <div class="card">
+          <img class="card-img-top" src="mapquest.JPG" alt="Card image cap">
           <div class="card-block">
             <h4 class="card-title">MapQuest Application</h4>
             <p class="card-text">A search engine which allows users to search for pages in the ICS domain. Will return the 10 highest related links.</p>
@@ -80,23 +126,47 @@
       </div>
       <div class="col-md-4"></div>
       <div class="col-md-4">
-        <div class="card" style="width: 20rem;">
-          <img class="card-img-top" src="fabflix.JPG" alt="Card image cap">
+        <div class="card">
+          <img class="card-img-top" src="vgAuto.JPG" alt="Card image cap">
           <div class="card-block">
             <h4 class="card-title">Videogame Automation Software</h4>
-            <p class="card-text">A search engine which allows users to search for pages in the ICS domain. Will return the 10 highest related links.</p>
+            <p class="card-text">Created several scripts that automate gameplay in various multiplayer games. The scripts also randomize mouse movements and click frequencies to emulate human behavior.</p>
           </div>
         </div>
       </div>
     </div>
-          </div>
-        </a>
+    </div>
+  </a>
 
+  <!-- Used font-awesome to get the icons for each of these items -->
         <a name="contact">
         <h2>Contact</h2>
-          <a href="mailto:rnachiap@uci.edu">email</a>
-          <a href="https://www.linkedin.com/in/raam-nachiappan/">LinkedIn</a>
-          <a href=""></a>
-        </a>
+        <ul class="icons-list">
+            <li class="icons-list__item">
+              <a href="mailto:rnachiap@uci.edu" rel="nofollow">
+                <i class="fa fa-envelope fa-5x" aria-hidden="true"></i>
+                <h3>Email</h3>
+              </a>
+            </li>
+            <li class="icons-list__item">
+              <a href="https://github.com/RaamN" rel="nofollow">
+                <i class="fa fa-github fa-5x" aria-hidden="true"></i>
+                <h3>Github</h3>
+              </a>
+            </li>
+            <li class="icons-list__item">
+                <a href="https://www.linkedin.com/in/raam-nachiappan/" rel="nofollow">
+                  <i class="fa fa-linkedin-square fa-5x" aria-hidden="true"></i>
+                  <h3>LinkedIn</h3>
+                </a>
+              </li>
+          </a>
+    
+
+          <footer class="container-fluid text-center">
+              <div  id ="footer"><div class="inner">
+                  © 2017 Raam Nachiappan 
+              </div></div>
+          </footer>
     </body>
 </html>
