@@ -21,8 +21,8 @@ $(document).ready(function () {
 //Taken from w3 schools, link here: https://www.w3schools.com/jquery/tryit.asp?filename=tryjquery_fadetoggle
 $(document).ready(function(){
     $(".card-img-top").hover(function(){
-        $(this).fadeToggle("fast");
-        $(this).fadeToggle(200);
+        $(this).fadeTo(1000, 0.4);
+        $(this).fadeTo(1000, 1.0);
     });
 });
 
