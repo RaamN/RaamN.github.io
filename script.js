@@ -8,7 +8,7 @@ $(document).ready(function () {
         $(this).css("background-color", "#222");
     });
 });
-//highlights skill sections
+//highlights skill sections, link here: https://stackoverflow.com/questions/15301356/how-can-i-highlight-a-selected-list-item-with-jquery
 $(document).ready(function () {
     $(".container li").hover(function () {
         var theColorIs = $(this).css("color");
