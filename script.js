@@ -12,7 +12,7 @@ $(document).ready(function () {
 $(document).ready(function () {
     $(".container li").hover(function () {
         var theColorIs = $(this).css("color");
-        $(this).css("background-color", "#525252");
+        $(this).css("background-color", "#c5cdd9");
     }, function () {
         $(this).css("background-color", "#FFFFFF");
     });

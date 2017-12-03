@@ -9,7 +9,7 @@
   }
 
 footer {
-    background-color: #f2f2f2;
+    background-color: #ffffff;
     padding: 25px;
 }
 
@@ -19,6 +19,8 @@ footer {
     padding-top: 20px;
     font-size: 12px;
     line-height: 20px;
+    width: 100%;
+    display: inline-block;
 }
 
 .card {
@@ -30,34 +32,186 @@ footer {
   height:auto;
   width:500px;
 }
-
-@media screen and (max-width: 699px) and (min-width: 250px){
-  .card-img-top {
-    height: auto;
-    width:250px;
-  }
-}
-@media screen and (max-width: 1150px) and (min-width: 700px) {
-  .card-img-top {
-    height: auto;
-    width:400px;
-  }
-}
-
-@media screen and (max-width: 699px) and (min-width: 520px), (min-width: 1151px) {
-  .card-img-top {
-    height:auto;
-    width:500px;
-  }
-}
-
-a {
-    text-decoration: none ;
-    color: black;
+ .icons-list{
+   display: inline;
+   list-style-type: none;
+   padding-right: 20px;
  }
+
+ .icons-list li{
+    float: left;
+    margin: 2.5em 2.5em;
+}
+ 
+a {
+  text-decoration: none ;
+  color: black;
+}
+
 a:hover
- {
-   color:black;
-   text-decoration:none;
-   cursor:pointer;
+{
+ color:black;
+ text-decoration:none;
+ cursor:pointer;
+}
+
+
+ /* Nicolas Gomollon helped me with the formatting on the article CSS */
+
+article.repos {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+}
+
+article.repos>div.repo {
+	padding: 9pt 12pt;
+	border: 1pt solid #c5cdd9;
+	-webkit-border-radius: 3pt;
+	-moz-border-radius: 3pt;
+	-ms-border-radius: 3pt;
+	-o-border-radius: 3pt;
+	border-radius: 3pt;
+}
+
+article.repos>div.repo>h4 {
+	font-size: 12pt;
+}
+
+article.repos>div.repo>div {
+	margin: 0.5em 0.5em;
+	font-size: 10pt;
+}
+
+article.repos>div.repo>div:last-of-type {
+	margin-bottom: 0;
+}
+
+article.repos>div.repo>div.summary {
+	font-style: italic;
+}
+
+@media (max-width: 500pt) {
+	
+	article.repos>div.repo {
+		margin: 0.5em 0;
+	}
+	
+	article.repos>div.repo:first-of-type {
+		margin-top: 0;
+	}
+	
+	article.repos>div.repo:last-of-type {
+		margin-bottom: 0;
+	}
+	
+}
+
+@media (min-width: 500pt) {
+	
+	article.repos>div.repo {
+		width: calc(50% - (12pt + 3pt) * 2 + 1pt);
+		margin: 3pt;
+	}
+	
+	article.repos>div.repo:nth-of-type(-n+2) {
+		margin-top: 0;
+	}
+	
+	article.repos>div.repo:nth-of-type(odd) {
+		margin-left: 0;
   }
+  
+  article.repos>div.repo:nth-child(4){
+    margin-left: 2.5em;
+
+  }
+	
+	article.repos>div.repo:nth-of-type(even) {
+		margin-right: 0;
+	}
+	
+}
+
+article.websites {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+}
+
+article.websites>div.browser {
+	padding-bottom: 1em;
+	width: 100%;
+}
+
+article.websites>div.browser>a.window {
+	width: 100%;
+}
+
+article.websites>div.browser>.window>div.location {
+	display: block;
+}
+
+article.websites>div.browser>.window+* {
+	margin-top: 5pt;
+}
+
+article.websites>div.browser>.window~* {
+	color: #444444;
+	text-align: center;
+}
+
+@media (max-width: 500pt) {
+	
+	article.websites>div.browser {
+		margin: 0.5em 0;
+	}
+	
+	article.websites>div.browser:first-of-type {
+		margin-top: 0;
+	}
+	
+	article.websites>div.browser:last-of-type {
+		margin-bottom: 0;
+		padding-bottom: 0;
+	}
+	
+	div.browser>.window>div.location {
+		margin: 6pt 20pt;
+		color: #000000;
+		font-size: 11pt;
+		
+		-webkit-border-radius: 5pt;
+		-moz-border-radius: 5pt;
+		-ms-border-radius: 5pt;
+		-o-border-radius: 5pt;
+		border-radius: 5pt;
+	}
+	
+}
+
+@media (min-width: 500pt) {
+	
+	article.websites>div.browser {
+		width: calc(50% - 5pt * 2 + 1pt);
+		margin: 3pt;
+	}
+	
+	article.websites>div.browser:nth-of-type(-n+2) {
+		margin-top: 0;
+	}
+	
+	article.websites>div.browser:nth-of-type(odd) {
+		margin-left: 0;
+	}
+	
+	article.websites>div.browser:nth-of-type(even) {
+		margin-right: 0;
+	}
+	
+	article.websites>div.browser:nth-last-of-type(-n+2) {
+		margin-bottom: 0;
+		padding-bottom: 0;
+	}
+	
+}
