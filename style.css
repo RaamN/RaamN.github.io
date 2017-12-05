@@ -14,7 +14,7 @@ footer {
 }
 
 #footer{
-    min-height: 50px;
+    min-height: 200px;
     text-align: left;
     padding-top: 20px;
     font-size: 12px;
@@ -55,8 +55,12 @@ a:hover
  cursor:pointer;
 }
 
+.description{
+	margin-left:2.5em;
+}
 
- /* Nicolas Gomollon helped me with the formatting on the article CSS */
+
+ /* I got help for the formatting from the articles here https://nicolas.gomollon.me/ */
 
 article.repos {
 	display: flex;
@@ -125,6 +129,15 @@ article.repos>div.repo>div.summary {
   article.repos>div.repo:nth-child(4){
     margin-left: 2.5em;
 
+  }
+  article.repos>div.repo:nth-child(2){
+    margin-left: 2.5em;
+  }
+  article.repos>div.repo:nth-child(3){
+    margin-left: 2.5em;
+  }
+  article.repos>div.repo:nth-child(1){
+    margin-left: 2.5em;
   }
 	
 	article.repos>div.repo:nth-of-type(even) {
